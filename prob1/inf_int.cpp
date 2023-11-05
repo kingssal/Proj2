@@ -188,7 +188,7 @@ inf_int operator-(const inf_int& a, const inf_int& b) {
         if (j >= 0) diff -= b.digits[j--] - '0';
         if (diff < 0) {
             diff += 10;
-            borrow = -1;
+            borrow = 1; //1을 빌려야 함
         } else {
             borrow = 0;
         }
@@ -238,7 +238,7 @@ inf_int operator*(const inf_int& a, const inf_int& b) {
 
 std::ostream& operator<<(std::ostream& os, const inf_int& obj) {
      if (!obj.thesign) {
-        os << '-'; 
+        os << '-';  //음수일때 - 출력해야지
     }
     for (int i = 0; i < obj.length; i++) {
         os << obj.digits[i]; 

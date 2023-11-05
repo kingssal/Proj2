@@ -24,12 +24,12 @@ int main()
 
 
 	if (f==d) {
-		cout << "a : " << a << endl;
-		cout << "b : " << b << endl;
-		cout << "c : " << c << endl;
-		cout << "d : " << d << endl;
+		cout << "a : " << a << endl; //~~~~~~~~55500나와야함
+		cout << "b : " << b << endl; //~~~~~~~~44
+		cout << "c : " << c << endl; //a에서 00뺀거
+		cout << "d : " << d << endl; //~~~~~11
 		// cout << "e : " << e << endl;
-		cout << "f : " << f << endl;
+		cout << "f : " << f << endl; //same as d
 		// cout << "g : " << g << endl;
 	}
 
